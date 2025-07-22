@@ -1,6 +1,6 @@
 ## Bank Marketing Prediction Project
 
-[View the notebook](https://github.com/jpistoriusp/Comparing_Classifiers/blob/main/Comparing_Classifiers.ipynb)
+[View the notebook](https://github.com/jpistoriusp/Comparing_Classifiers/blob/main/Comparing_Classifiers2.ipynb)
 
 Data Source:
 
