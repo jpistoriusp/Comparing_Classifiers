@@ -1,3 +1,5 @@
+[View the notebook](https://github.com/jpistoriusp/Comparing_Classifiers/blob/main/Comparing_Classifiers.ipynb)
+
 I chose a fraud detection dataset because it represents a real-world challenge with serious impact. Insurance fraud is a major problem for companies, costing billions of dollars each year. Being able to spot potentially fraudulent claims early can save time, money, and help honest customers get faster service.
 
 This type of project allowed me to:
