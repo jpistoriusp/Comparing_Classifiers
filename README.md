@@ -1,4 +1,13 @@
-### Why We Chose This Model and How We Measured Success
+I chose a fraud detection dataset because it represents a real-world challenge with serious impact. Insurance fraud is a major problem for companies, costing billions of dollars each year. Being able to spot potentially fraudulent claims early can save time, money, and help honest customers get faster service.
+
+This type of project allowed me to:
+- Work with imbalanced data, which is common in real scenarios.
+- Explore patterns in human behavior, policy details, and claim types.
+- Practice building a machine learning model to predict yes/no outcomes (fraud or not fraud).
+
+It’s a meaningful and practical application of data science that can make a real difference.
+
+
 
 #### Why Use Logistic Regression?
 
@@ -18,7 +27,7 @@ We started with a model called Logistic Regression for a few important reasons:
 
 ---------------------------------------------------
 
-### How We Measured Success
+#### How I Measured Success
 
 Because fraud is rare, a model that just says “not fraud” all the time might look accurate — but would be useless. So instead of just looking at overall accuracy, we focused on a few key measurements:
 
