@@ -1,41 +1,39 @@
+## Bank Marketing Prediction Project
+
 [View the notebook](https://github.com/jpistoriusp/Comparing_Classifiers/blob/main/Comparing_Classifiers.ipynb)
 
-I chose a fraud detection dataset because it represents a real-world challenge with serious impact. Insurance fraud is a major problem for companies, costing billions of dollars each year. Being able to spot potentially fraudulent claims early can save time, money, and help honest customers get faster service.
+Data Source:
 
-This type of project allowed me to:
-- Work with imbalanced data, which is common in real scenarios.
-- Explore patterns in human behavior, policy details, and claim types.
-- Practice building a machine learning model to predict yes/no outcomes (fraud or not fraud).
+[Bank Marketing Dataset - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing)
 
-It’s a meaningful and practical application of data science that can make a real difference.
+### Project Overview
+
+This project uses historical marketing data from a Portuguese bank to predict whether a customer will subscribe to a term deposit. The bank contacted clients by phone, and this dataset includes customer information, details of past campaigns, and whether the client eventually signed up for the deposit.
+
+I tested and compared four different models to see which could best predict the outcome:
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Decision Tree
+- Support Vector Machine (SVM)
+
+### What I Found
+
+- Most customers do not sign up — only about 11% say "yes", making this a tough prediction problem.
+- Logistic Regression and SVM were the most accurate, both scoring around 88.7% accuracy.
+- Logistic Regression was much faster to train, making it more practical for real-world use.
+- Decision Tree and KNN also performed reasonably well, but with slightly lower accuracy.
+- All models had a hard time correctly predicting the small number of "yes" outcomes, which suggests we need to improve how the models handle imbalanced data.
+
+### Improvements Made
+
+I tested ways to improve the models by:
+- Trying different settings (like how many neighbors to use in KNN)
+- Using better evaluation methods — not just accuracy, but also how well the models identify the "yes" cases
+- Planning for future techniques like balancing the dataset and using advanced models
+
+### Final Recommendation
+
+Logistic Regression is currently the best choice for this task due to its strong performance and speed. But because the data is so imbalanced, future work should focus on better identifying customers who are likely to say "yes." This would help the bank focus its marketing efforts more effectively.
 
 
 
-#### Why Use Logistic Regression?
-
-We started with a model called Logistic Regression for a few important reasons:
-
-- Easy to Understand:  
-  It gives clear information about which parts of a claim (like damage severity or incident type) are most related to fraud.
-
-- Built for Yes/No Predictions:  
-  Since we’re trying to predict whether a claim is **fraud or not**, this model is a perfect fit.
-
-- Good Starting Point:  
-  This model is simple and fast, so we used it as a starting point to compare against more advanced models later.
-
-- Handles Imbalanced Data:  
-  Most of the claims in our dataset were not fraud, and this model lets us adjust for that so it doesn’t ignore the rare fraud cases.
-
----------------------------------------------------
-
-#### How I Measured Success
-
-Because fraud is rare, a model that just says “not fraud” all the time might look accurate — but would be useless. So instead of just looking at overall accuracy, we focused on a few key measurements:
-
-Precision: When the model says a claim is fraud, how often is it right? Helps avoid falsely accusing good claims. |
-Recall: How many actual fraud cases did the model catch? This is especially important so real fraud doesn't slip through. |
-F1 Score: A balanced score that looks at both precision and recall together. |
-Confusion Matrix: A simple chart that shows how many claims were correctly or incorrectly labeled. |
-
-In short: We cared most about how well the model could catch fraud without wrongly flagging too many honest claims. Even though it's not perfect, it gives us a clear foundation to build better models later.
